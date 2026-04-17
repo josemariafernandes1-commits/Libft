@@ -6,13 +6,13 @@
 /*   By: jduque-n <jduque-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/17 17:59:57 by jduque-n          #+#    #+#             */
-/*   Updated: 2026/04/17 18:04:55 by jduque-n         ###   ########.fr       */
+/*   Updated: 2026/04/17 19:14:29 by jduque-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	return (NULL);
 }

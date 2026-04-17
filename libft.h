@@ -6,14 +6,14 @@
 /*   By: jduque-n <jduque-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/15 15:52:44 by jduque-n          #+#    #+#             */
-/*   Updated: 2026/04/17 18:08:00 by jduque-n         ###   ########.fr       */
+/*   Updated: 2026/04/17 18:40:41 by jduque-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-#include <stddef.h>
+# include <stddef.h>
 
 // Memory
 
