@@ -6,7 +6,7 @@
 /*   By: jduque-n <jduque-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/16 17:24:12 by jduque-n          #+#    #+#             */
-/*   Updated: 2026/04/17 17:45:10 by jduque-n         ###   ########.fr       */
+/*   Updated: 2026/04/23 18:54:12 by jduque-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,20 @@
 
 int	ft_atoi(const char *nptr)
 {
-	int	num_signal;
-	int	num;
+	int		num_signal;
+	long	num;
 
 	num_signal = 1;
 	num = 0;
 	while ((*nptr >= 9 && *nptr <= 13) || (*nptr == 32))
 		nptr++;
-	while (*nptr == '-' || *nptr == '+')
+	if (*nptr == '-' || *nptr == '+')
+	{
 		if (*nptr++ == '-')
 			num_signal = -num_signal;
+		if (*nptr == '-')
+			return (0);
+	}
 	while (*nptr >= '0' && *nptr <= '9')
 		num = num * 10 + *nptr++ - '0';
 	return (num * num_signal);
@@ -33,7 +37,7 @@ int	ft_atoi(const char *nptr)
 
 // int	main(void)
 // {
-//     char	strint_test[] = "  \n---+--+12345b567";
+//     char	strint_test[] = "-2147483648";
 //     int     string_return;
 
 //     string_return = ft_atoi(strint_test);

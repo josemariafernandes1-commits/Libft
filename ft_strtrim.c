@@ -6,7 +6,7 @@
 /*   By: jduque-n <jduque-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 17:25:32 by jduque-n          #+#    #+#             */
-/*   Updated: 2026/04/22 16:28:39 by jduque-n         ###   ########.fr       */
+/*   Updated: 2026/04/23 16:01:10 by jduque-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 		end--;
 	return (ft_substr(s1, start, end - start));
 }
-
 
 // #include <stdio.h>
 

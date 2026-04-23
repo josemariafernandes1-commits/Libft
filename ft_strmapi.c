@@ -1,31 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jduque-n <jduque-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/16 14:15:40 by jduque-n          #+#    #+#             */
-/*   Updated: 2026/04/23 18:21:17 by jduque-n         ###   ########.fr       */
+/*   Created: 2026/04/22 21:34:40 by jduque-n          #+#    #+#             */
+/*   Updated: 2026/04/23 15:59:59 by jduque-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
-int	ft_memcmp(const void *s1, const void *s2, size_t n)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	const unsigned char	*ss1;
-	const unsigned char	*ss2;
+	char			*s2;
+	char			*s_pointer;
+	unsigned int	i;
 
-	ss1 = (const unsigned char *)s1;
-	ss2 = (const unsigned char *)s2;
-	while (n > 0)
-	{
-		if (*ss1 != *ss2)
-			return (*ss1 - *ss2);
-		n--;
-		ss1++;
-		ss2++;
-	}
-	return (0);
+	if (!s || !f)
+		return (NULL);
+	s2 = malloc (sizeof(char) * (ft_strlen(s) + 1));
+	if (!s2)
+		return (NULL);
+	s_pointer = s2;
+	i = 0;
+	while (*s)
+		*s2++ = f(i++, *s++);
+	*s2 = '\0';
+	return (s_pointer);
 }

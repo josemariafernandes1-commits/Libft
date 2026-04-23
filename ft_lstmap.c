@@ -1,31 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jduque-n <jduque-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/16 14:15:40 by jduque-n          #+#    #+#             */
-/*   Updated: 2026/04/23 18:21:17 by jduque-n         ###   ########.fr       */
+/*   Created: 2026/04/23 17:34:19 by jduque-n          #+#    #+#             */
+/*   Updated: 2026/04/23 18:26:14 by jduque-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_memcmp(const void *s1, const void *s2, size_t n)
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	const unsigned char	*ss1;
-	const unsigned char	*ss2;
+	t_list	*header;
+	t_list	*new_node;
+	void	*temp_cont;
 
-	ss1 = (const unsigned char *)s1;
-	ss2 = (const unsigned char *)s2;
-	while (n > 0)
+	if (!lst || !f || !del)
+		return (NULL);
+	header = NULL;
+	while (lst)
 	{
-		if (*ss1 != *ss2)
-			return (*ss1 - *ss2);
-		n--;
-		ss1++;
-		ss2++;
+		temp_cont = f(lst -> content);
+		new_node = ft_lstnew(temp_cont);
+		if (!new_node)
+		{
+			del(temp_cont);
+			ft_lstclear(&header, del);
+			return (NULL);
+		}
+		ft_lstadd_back(&header, new_node);
+		lst = lst->next;
 	}
-	return (0);
+	return (header);
 }
