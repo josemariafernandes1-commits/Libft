@@ -6,7 +6,7 @@
 /*   By: jduque-n <jduque-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/15 15:52:44 by jduque-n          #+#    #+#             */
-/*   Updated: 2026/04/23 16:05:21 by jduque-n         ###   ########.fr       */
+/*   Updated: 2026/04/23 19:47:00 by jduque-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,13 @@
 
 # include <stddef.h>
 
+# ifdef __cplusplus
+extern "C" {
+# endif
+
 // Memory
 
-void	ft_bzero(void *s, size_t n);
+void ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t nmemb, size_t size);
 void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
@@ -75,5 +79,9 @@ t_list	*ft_lstlast(t_list *lst);
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 t_list	*ft_lstnew(void *content);
 int		ft_lstsize(t_list *lst);
+
+# ifdef __cplusplus
+}
+# endif
 
 #endif
