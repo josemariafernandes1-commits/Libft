@@ -6,7 +6,7 @@
 /*   By: jduque-n <jduque-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/14 14:47:55 by jduque-n          #+#    #+#             */
-/*   Updated: 2026/04/17 18:09:02 by jduque-n         ###   ########.fr       */
+/*   Updated: 2026/04/28 17:32:13 by jduque-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,3 +20,17 @@ void	ft_bzero(void *s, size_t n)
 	while (n-- > 0)
 		*p++ = '\0';
 }
+
+// #include <stdio.h>
+// #include <unistd.h>
+// #include "libft.h"
+
+// int	main(void)
+// {
+//     char buf[12] = "hello!!!!";
+
+//     printf("Before: %s\n", buf);
+//     ft_bzero(buf, 5);
+// 	write(1, buf + 5, ft_strlen(buf + 5));
+//     return (0);
+// }

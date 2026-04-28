@@ -6,7 +6,7 @@
 /*   By: jduque-n <jduque-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/15 15:52:44 by jduque-n          #+#    #+#             */
-/*   Updated: 2026/04/23 19:47:00 by jduque-n         ###   ########.fr       */
+/*   Updated: 2026/04/28 17:32:03 by jduque-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,9 @@
 
 # include <stddef.h>
 
-# ifdef __cplusplus
-extern "C" {
-# endif
+/* Memory */
 
-// Memory
-
-void ft_bzero(void *s, size_t n);
+void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t nmemb, size_t size);
 void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
@@ -29,7 +25,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
 void	*ft_memset(void *s, int c, size_t n);
 
-// String
+/* String */
 
 int		ft_atoi(const char *nptr);
 int		ft_isalnum(int c);
@@ -55,14 +51,14 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
 
-// I/O
+/* I/O */
 
 void	ft_putchar_fd(char c, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 void	ft_putstr_fd(char *s, int fd);
 
-// Linked Lists
+/* Linked Lists */
 
 typedef struct s_list
 {
@@ -79,9 +75,5 @@ t_list	*ft_lstlast(t_list *lst);
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 t_list	*ft_lstnew(void *content);
 int		ft_lstsize(t_list *lst);
-
-# ifdef __cplusplus
-}
-# endif
 
 #endif

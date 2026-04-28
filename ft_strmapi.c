@@ -6,7 +6,7 @@
 /*   By: jduque-n <jduque-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 21:34:40 by jduque-n          #+#    #+#             */
-/*   Updated: 2026/04/23 15:59:59 by jduque-n         ###   ########.fr       */
+/*   Updated: 2026/04/25 15:08:57 by jduque-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char			*s2;
-	char			*s_pointer;
+	char			*ss2;
 	unsigned int	i;
 
 	if (!s || !f)
@@ -24,10 +24,10 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	s2 = malloc (sizeof(char) * (ft_strlen(s) + 1));
 	if (!s2)
 		return (NULL);
-	s_pointer = s2;
+	ss2 = s2;
 	i = 0;
 	while (*s)
 		*s2++ = f(i++, *s++);
 	*s2 = '\0';
-	return (s_pointer);
+	return (ss2);
 }

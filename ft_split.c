@@ -6,12 +6,13 @@
 /*   By: jduque-n <jduque-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 19:28:48 by jduque-n          #+#    #+#             */
-/*   Updated: 2026/04/23 12:10:52 by jduque-n         ###   ########.fr       */
+/*   Updated: 2026/04/25 15:07:04 by jduque-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 int	count_sentence(const char *s, char c)
 {
@@ -84,10 +85,9 @@ char	**ft_split(const char *s, char c)
 		else
 			s++;
 	}
+	*aux_list = NULL;
 	return (str_list);
 }
-
-// #include <stdio.h>
 
 // int	main(void)
 // {
