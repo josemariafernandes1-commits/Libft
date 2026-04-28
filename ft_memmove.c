@@ -6,7 +6,7 @@
 /*   By: jduque-n <jduque-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/14 18:45:50 by jduque-n          #+#    #+#             */
-/*   Updated: 2026/04/28 17:20:03 by jduque-n         ###   ########.fr       */
+/*   Updated: 2026/04/28 17:40:16 by jduque-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	unsigned char		*dest2;
 	const unsigned char	*src2;
 
-	if (!dest || !src)
+	if (!dest && !src)
 		return (NULL);
 	dest2 = (unsigned char *) dest;
 	src2 = (const unsigned char *) src;
