@@ -31,3 +31,21 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	*s2 = '\0';
 	return (ss2);
 }
+
+// char	to_lower(unsigned int i, char c)
+// {
+// 	if (i < 100 && (c >= 'A' && c <= 'Z'))
+// 		return (c += 'a' - 'A');
+// 	return (c);
+// }
+
+// #include <stdio.h>
+
+// int	main(void)
+// {
+// 	char	*string = "St Ri Ng";
+// 	char	*result;
+
+// 	result = ft_strmapi(string, to_lower);
+// 	printf("%s", result);
+// }

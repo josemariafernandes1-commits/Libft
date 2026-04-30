@@ -22,3 +22,21 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	while (*s)
 		f(i++, s++);
 }
+
+// void	to_lower(unsigned int i, char *c)
+// {
+// 	(void)i;
+// 	if (*c >= 'A' && *c <= 'Z')
+// 		*c += ('a' - 'A');
+// }
+
+// #include <stdio.h>
+
+// int	main(void)
+// {
+// 	char	string[] = "St Ri Ng";
+
+// 	ft_striteri(string, to_lower);
+// 	printf("%s", string);
+// 	return (0);
+// }

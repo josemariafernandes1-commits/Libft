@@ -31,8 +31,7 @@ char	*ft_strdup(const char *src)
 // 	string2 = ft_strdup(string1);
 // 	if (string2 == NULL)
 // 		return (1);
-// 	while (*string2)
-// 		write(1, string2++, 1);
+// 	write(1, string2, ft_strlen(string2));
 // 	free(string2);
 // 	return (0);
 // }

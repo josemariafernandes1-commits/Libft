@@ -6,7 +6,7 @@
 /*   By: jduque-n <jduque-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/16 14:15:40 by jduque-n          #+#    #+#             */
-/*   Updated: 2026/04/23 18:21:17 by jduque-n         ###   ########.fr       */
+/*   Updated: 2026/04/30 15:32:46 by jduque-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,23 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
+
+// #include <stdio.h>
+
+// int	main(void)
+// {
+// 	char	*string = "String";
+// 	char	*string2 = "Strang";
+// 	char	*string3 = "Str";
+// 	int		c;
+
+// 	c = ft_memcmp(string, string2, ft_strlen(string));
+// 	printf("%d\n", c);
+// 	c = ft_memcmp(string, string3, ft_strlen(string));
+// 	printf("%d\n", c);
+// 	c = ft_memcmp(string2, string3, ft_strlen(string));
+// 	printf("%d\n", c);
+// 	c = ft_memcmp(string2, string, ft_strlen(string));
+// 	printf("%d\n", c);
+// 	return (0);
+// }

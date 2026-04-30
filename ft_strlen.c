@@ -6,13 +6,13 @@
 /*   By: jduque-n <jduque-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/14 14:09:13 by jduque-n          #+#    #+#             */
-/*   Updated: 2026/04/17 17:47:48 by jduque-n         ###   ########.fr       */
+/*   Updated: 2026/04/30 15:41:15 by jduque-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strlen(const char *str)
+size_t	ft_strlen(const char *str)
 {
 	const char	*start;
 
@@ -21,3 +21,14 @@ int	ft_strlen(const char *str)
 		str++;
 	return (str - start);
 }
+
+// #include <stdio.h>
+
+// int	main(void)
+// {
+// 	char	string[7] = "String";
+// 	size_t	size;
+
+// 	size = ft_strlen(string);
+// 	printf("%d\n", (int)size);
+// }

@@ -24,3 +24,22 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
+
+// #include <stdio.h>
+
+// int	main(void)
+// {
+// 	const char	*s1 = "ABDhh";
+// 	const char	*s2 = "ABC";
+// 	size_t		len = 4;
+// 	int			result;
+
+// 	result = ft_strncmp(s1, s2, len);
+// 	printf("%d\n", result);
+// 	result = ft_strncmp(s1, s2, 2);
+// 	printf("%d\n", result);
+// 	result = ft_strncmp(s1, s2, ft_strlen(s1));
+// 	printf("%d\n", result);
+// 	result = ft_strncmp(s2, s1, ft_strlen(s1));
+// 	printf("%d\n", result);
+// }

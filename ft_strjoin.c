@@ -36,16 +36,15 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	return (joined_string);
 }
 
-/* #include <stdio.h>
+// #include <stdio.h>
 
-int	main (void)
-{
-	char 	*str1 = "How to make ";
-	char 	*str2 = "a full sentence";
-	char 	*conc_string;
+// int	main (void)
+// {
+// 	char 	*str1 = "How to make ";
+// 	char 	*str2 = "a full sentence";
+// 	char 	*conc_string;
 
-	conc_string = ft_strjoin(str1, str2);
-	printf("%s", conc_string);
-	free(conc_string);
-}
- */
+// 	conc_string = ft_strjoin(str1, str2);
+// 	printf("%s", conc_string);
+// 	free(conc_string);
+// }

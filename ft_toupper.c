@@ -18,3 +18,14 @@ int	ft_toupper(int c)
 		return (c - ('a' - 'A'));
 	return (c);
 }
+
+// #include <stdio.h>
+
+// int	main(void)
+// {
+// 	int	letter = 'a';
+
+// 	printf("%c\n", (char)letter);
+// 	letter = ft_toupper(letter);
+// 	printf("%c\n", (char)letter);
+// }

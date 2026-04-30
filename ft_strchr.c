@@ -6,7 +6,7 @@
 /*   By: jduque-n <jduque-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/15 16:33:39 by jduque-n          #+#    #+#             */
-/*   Updated: 2026/04/20 18:57:14 by jduque-n         ###   ########.fr       */
+/*   Updated: 2026/04/30 15:43:21 by jduque-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,15 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)s);
 	return (NULL);
 }
+
+// #include <stdio.h>
+
+// int	main(void)
+// {
+// 	char	string[7] = "String";
+// 	int		letter = 'r';
+// 	char	*found;
+
+// 	found = ft_strchr(string, letter);
+// 	printf("%s\n", found);
+// }

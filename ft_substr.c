@@ -6,7 +6,7 @@
 /*   By: jduque-n <jduque-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/17 17:59:57 by jduque-n          #+#    #+#             */
-/*   Updated: 2026/04/24 22:52:34 by jduque-n         ###   ########.fr       */
+/*   Updated: 2026/04/30 16:18:42 by jduque-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,3 +34,24 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	*dest = '\0';
 	return (sub);
 }
+
+// #include <stdio.h>
+
+// int	main(void)
+// {
+// 	char	*str1 = "abcdefghijklmnopqrstuvwxyz";
+// 	int		start = 4;
+// 	char	*sub_string;
+
+// 	sub_string = ft_substr("", start, ft_strlen(str1));
+// 	printf("%s\n", sub_string);
+// 	sub_string = ft_substr(str1, 32, ft_strlen(str1));
+// 	printf("%s\n", sub_string);
+// 	sub_string = ft_substr(str1, start, 30);
+// 	printf("%s\n", sub_string);
+// 	sub_string = ft_substr(str1, start = 7, ft_strlen(str1));
+// 	printf("%s\n", sub_string);
+// 	sub_string = ft_substr(str1, start = 0, ft_strlen(str1));
+// 	printf("%s\n", sub_string);
+// 	return (0);
+// }

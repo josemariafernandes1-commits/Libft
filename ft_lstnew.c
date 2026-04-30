@@ -24,3 +24,17 @@ t_list	*ft_lstnew(void *content)
 	new_node -> next = NULL;
 	return (new_node);
 }
+
+// #include <stdio.h>
+
+// int	main(void)
+// {
+// 	t_list	*head;
+
+// 	head = NULL;
+// 	printf("New list\n");
+// 	head = ft_lstnew(ft_strdup("First"));
+// 	if (head)
+// 		printf("First node: %s\n", (char *)head->content);
+// 	return (0);
+// }

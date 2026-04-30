@@ -6,7 +6,7 @@
 /*   By: jduque-n <jduque-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/14 19:54:09 by jduque-n          #+#    #+#             */
-/*   Updated: 2026/04/17 18:14:03 by jduque-n         ###   ########.fr       */
+/*   Updated: 2026/04/30 16:03:20 by jduque-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,3 +33,26 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	*dest = '\0';
 	return (size_dest + size_src);
 }
+
+// #include <stdio.h>
+
+// int	main(void)
+// {
+// 	char	string[30] = "String ";
+// 	char	string2[] = "connected";
+// 	size_t	conc_size;
+
+// 	conc_size = ft_strlcat(string, string2, 0);
+// 	printf("%d\n", (int)conc_size);
+// 	printf("%s\n", string);
+// 	conc_size = ft_strlcat(string, string2, 5);
+// 	printf("%d\n", (int)conc_size);
+// 	printf("%s\n", string);
+// 	conc_size = ft_strlcat(string, string2, ft_strlen(string));
+// 	printf("%d\n", (int)conc_size);
+// 	printf("%s\n", string);
+// 	conc_size = ft_strlcat(string, string2, 
+// 	ft_strlen(string) + ft_strlen(string2) + 1);
+// 	printf("%d\n", (int)conc_size);
+// 	printf("%s\n", string);
+// }
