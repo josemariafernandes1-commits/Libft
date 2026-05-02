@@ -6,14 +6,14 @@
 /*   By: jduque-n <jduque-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 16:36:11 by jduque-n          #+#    #+#             */
-/*   Updated: 2026/04/23 16:05:34 by jduque-n         ###   ########.fr       */
+/*   Updated: 2026/05/02 21:02:10 by jduque-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-long	ft_count_size(int n)
+static long	ft_count_size(int n)
 {
 	long			counted_size;
 	long			backup_n;
@@ -35,7 +35,7 @@ long	ft_count_size(int n)
 	return (counted_size);
 }
 
-char	*ft_alloc_size(int n)
+static char	*ft_alloc_size(int n)
 {
 	return (malloc(sizeof(char) * (ft_count_size(n) + 1)));
 }

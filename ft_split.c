@@ -6,7 +6,7 @@
 /*   By: jduque-n <jduque-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 19:28:48 by jduque-n          #+#    #+#             */
-/*   Updated: 2026/04/25 15:07:04 by jduque-n         ###   ########.fr       */
+/*   Updated: 2026/05/02 21:05:06 by jduque-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-int	count_sentence(const char *s, char c)
+static int	count_sentence(const char *s, char c)
 {
 	int	counter;
 

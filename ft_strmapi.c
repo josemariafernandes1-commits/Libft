@@ -6,7 +6,7 @@
 /*   By: jduque-n <jduque-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 21:34:40 by jduque-n          #+#    #+#             */
-/*   Updated: 2026/04/25 15:08:57 by jduque-n         ###   ########.fr       */
+/*   Updated: 2026/05/02 21:03:16 by jduque-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	return (ss2);
 }
 
-// char	to_lower(unsigned int i, char c)
+// static char	to_lower(unsigned int i, char c)
 // {
 // 	if (i < 100 && (c >= 'A' && c <= 'Z'))
 // 		return (c += 'a' - 'A');

@@ -6,7 +6,7 @@
 /*   By: jduque-n <jduque-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 21:53:34 by jduque-n          #+#    #+#             */
-/*   Updated: 2026/04/22 22:00:20 by jduque-n         ###   ########.fr       */
+/*   Updated: 2026/05/02 21:03:22 by jduque-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		f(i++, s++);
 }
 
-// void	to_lower(unsigned int i, char *c)
+// static void	to_lower(unsigned int i, char *c)
 // {
 // 	(void)i;
 // 	if (*c >= 'A' && *c <= 'Z')
