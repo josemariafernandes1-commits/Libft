@@ -93,7 +93,7 @@ This project included the writing of functions adapted from the original version
 
 #### Conversion / Manipulation / Verification
 
-  Name | Function Declaration | Description of Operation
+  Name | Prototype | Description
   --|--|--
   [ft_atoi](./ft_atoi.c) | `int  ft_atoi(const char *nptr)` | Converts `nptr` to int
   [ft_isalpha](./ft_isalpha.c) | `int  ft_isalpha(int c);` | Checks if `c` is an alphabetic character
@@ -106,7 +106,7 @@ This project included the writing of functions adapted from the original version
 
 #### String Duplication / Manipulation / Comparison
 
-  Name | Function Declaration | Description of Operation
+  Name | Prototype | Description
   --|--|--
   [ft_strlen](./ft_strlen.c) | `size_t  ft_strlen(const char *s);` | Gets length of `s`
   [ft_strlcpy](./ft_strlcpy.c) | `size_t  ft_strlcpy(char *dst, const char *src, size_t size);` | Copies `size - 1` characters from `src` into `dst`
@@ -119,7 +119,7 @@ This project included the writing of functions adapted from the original version
   
 #### Memory Duplication / Allocation / Comparison
 
-  Name | Function Declaration | Description of Operation
+  Name | Prototype | Description
   --|--|--
   [ft_memset](./ft_memset.c) | `void  *ft_memset(void *s, int c, size_t n);` | Fills `s` with `n` bytes `c`
   [ft_bzero](./ft_bzero.c) | `void  ft_bzero(void *s, size_t n);` | Fills `s` with `n` bytes `'\0'`
@@ -133,7 +133,7 @@ This project included the writing of functions adapted from the original version
 
 - These functions were created to facilitate the execution of complex logical operations:
 
-  Name | Function Declaration | Description of Operation
+  Name | Prototype | Description
   --|--|--
   [ft_substr](./ft_substr.c) | `char  *ft_substr(char const *s, unsigned int start, size_t len);` | Gets substring from `s` starting at index `start` and has maximum length `len`
   [ft_strjoin](./ft_strjoin.c) | `char  *ft_strjoin(char const *s1, char const *s2);` | Concatenates `s1` and `s2` into a new string
