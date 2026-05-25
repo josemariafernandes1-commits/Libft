@@ -93,72 +93,72 @@ This project included the writing of functions adapted from the original version
 
 #### Conversion / Manipulation / Verification
 
-  Name | Prototype | Description
-  :---:|:---:|:---:
-  [ft_atoi](./ft_atoi.c) | `int  ft_atoi(const char *nptr)` | Converts `nptr` to int
-  [ft_isalpha](./ft_isalpha.c) | `int  ft_isalpha(int c);` | Checks if `c` is an alphabetic character
-  [ft_isdigit](./ft_isdigit.c) | `int  ft_isdigit(int c);` | Checks if `c` is a digit character
-  [ft_isalnum](./ft_isalnum.c) | `int  ft_isalnum(int c);` | Checks if `c` is an alphanumeric character
-  [ft_isascii](./ft_isascii.c) | `int  ft_isascii(int c);` | Checks if `c` is in ascii table
-  [ft_isprint](./ft_isprint.c) | `int  ft_isprint(int c);` | Checks if `c` is a printable character
-  [ft_toupper](./ft_toupper.c) | `int  ft_toupper(int c);` | Converts lowercase letter `c` to its uppercase equivalent
-  [ft_tolower](./ft_tolower.c) | `int  ft_tolower(int c);` | Converts uppercase letter `c` to its lowercase equivalent
+Name | Prototype | Description
+:---:|:---:|:---:
+[ft_atoi](./ft_atoi.c) | `int  ft_atoi(const char *nptr)` | Converts `nptr` to int
+[ft_isalpha](./ft_isalpha.c) | `int  ft_isalpha(int c);` | Checks if `c` is an alphabetic character
+[ft_isdigit](./ft_isdigit.c) | `int  ft_isdigit(int c);` | Checks if `c` is a digit character
+[ft_isalnum](./ft_isalnum.c) | `int  ft_isalnum(int c);` | Checks if `c` is an alphanumeric character
+[ft_isascii](./ft_isascii.c) | `int  ft_isascii(int c);` | Checks if `c` is in ascii table
+[ft_isprint](./ft_isprint.c) | `int  ft_isprint(int c);` | Checks if `c` is a printable character
+[ft_toupper](./ft_toupper.c) | `int  ft_toupper(int c);` | Converts lowercase letter `c` to its uppercase equivalent
+[ft_tolower](./ft_tolower.c) | `int  ft_tolower(int c);` | Converts uppercase letter `c` to its lowercase equivalent
 
 #### String Duplication / Manipulation / Comparison
 
-  Name | Prototype | Description
-  :---:|:---:|:---:
-  [ft_strlen](./ft_strlen.c) | `size_t  ft_strlen(const char *s);` | Gets length of `s`
-  [ft_strlcpy](./ft_strlcpy.c) | `size_t  ft_strlcpy(char *dst, const char *src, size_t size);` | Copies `size - 1` characters from `src` into `dst`
-  [ft_strlcat](./ft_strlcat.c) | `size_t  ft_strlcat(char *dst, const char *src, size_t size);` | Appends `size - strlen(dst) - 1` bytes from `src` to `dst`
-  [ft_strchr](./ft_strchr.c) | `char  *ft_strchr(const char *s, int c)` | Gets first occurence of `c` in `s`
-  [ft_strrchr](./ft_strrchr.c) | `char  *ft_strrchr(const char *s, int c)` | Gets last occurence of `c` in `s`
-  [ft_strncmp](./ft_strncmp.c) | `int  ft_strncmp(const char *s1, const char *s2, size_t n)` | Compares the first `n` bytes of `s1` and `s2`
-  [ft_strnstr](./ft_strnstr.c) | `char  *ft_strnstr(const char *big, const char *little, size_t len)` | Locates `little` in `big` where no more than `len` characters are searched
-  [ft_strdup](./ft_strdup.c) | `char *ft_strdup(const char *s);` | Duplicates `s` into heap
+Name | Prototype | Description
+:---:|:---:|:---:
+[ft_strlen](./ft_strlen.c) | `size_t  ft_strlen(const char *s);` | Gets length of `s`
+[ft_strlcpy](./ft_strlcpy.c) | `size_t  ft_strlcpy(char *dst, const char *src, size_t size);` | Copies `size - 1` characters from `src` into `dst`
+[ft_strlcat](./ft_strlcat.c) | `size_t  ft_strlcat(char *dst, const char *src, size_t size);` | Appends `size - strlen(dst) - 1` bytes from `src` to `dst`
+[ft_strchr](./ft_strchr.c) | `char  *ft_strchr(const char *s, int c)` | Gets first occurence of `c` in `s`
+[ft_strrchr](./ft_strrchr.c) | `char  *ft_strrchr(const char *s, int c)` | Gets last occurence of `c` in `s`
+[ft_strncmp](./ft_strncmp.c) | `int  ft_strncmp(const char *s1, const char *s2, size_t n)` | Compares the first `n` bytes of `s1` and `s2`
+[ft_strnstr](./ft_strnstr.c) | `char  *ft_strnstr(const char *big, const char *little, size_t len)` | Locates `little` in `big` where no more than `len` characters are searched
+[ft_strdup](./ft_strdup.c) | `char *ft_strdup(const char *s);` | Duplicates `s` into heap
   
 #### Memory Duplication / Allocation / Comparison
 
-  Name | Prototype | Description
-  :---:|:---:|:---:
-  [ft_memset](./ft_memset.c) | `void  *ft_memset(void *s, int c, size_t n);` | Fills `s` with `n` bytes `c`
-  [ft_bzero](./ft_bzero.c) | `void  ft_bzero(void *s, size_t n);` | Fills `s` with `n` bytes `'\0'`
-  [ft_memcpy](./ft_memcpy.c) | `void  *ft_memcpy(void *dest, const void *src, size_t n);` | Copies `n` bytes from non-overlapping memory areas `src` to `dest`
-  [ft_memmove](./ft_memmove.c) | `void  *ft_memmove(void *dest, const void *src, size_t n);` | Copies `n` bytes from `src` to a temporary buffer and from that buffer to `dest`
-  [ft_memchr](./ft_memchr.c) | `void  *ft_memchr(const void *s, int c, size_t n)` | Scans `n` bytes of `s` for first instance of `c`
-  [ft_memcmp](./ft_memcmp.c) | `int  ft_memcmp(const void *s1, const void *s2, size_t n)` | Compares the first `n` bytes of `s1` and `s2`
-  [ft_calloc](./ft_calloc.c) | `void  *ft_calloc(size_t nmemb, size_t size);` | Allocates `nmemb * size` and initializes it to `0`
+Name | Prototype | Description
+:---:|:---:|:---:
+[ft_memset](./ft_memset.c) | `void  *ft_memset(void *s, int c, size_t n);` | Fills `s` with `n` bytes `c`
+[ft_bzero](./ft_bzero.c) | `void  ft_bzero(void *s, size_t n);` | Fills `s` with `n` bytes `'\0'`
+[ft_memcpy](./ft_memcpy.c) | `void  *ft_memcpy(void *dest, const void *src, size_t n);` | Copies `n` bytes from non-overlapping memory areas `src` to `dest`
+[ft_memmove](./ft_memmove.c) | `void  *ft_memmove(void *dest, const void *src, size_t n);` | Copies `n` bytes from `src` to a temporary buffer and from that buffer to `dest`
+[ft_memchr](./ft_memchr.c) | `void  *ft_memchr(const void *s, int c, size_t n)` | Scans `n` bytes of `s` for first instance of `c`
+[ft_memcmp](./ft_memcmp.c) | `int  ft_memcmp(const void *s1, const void *s2, size_t n)` | Compares the first `n` bytes of `s1` and `s2`
+[ft_calloc](./ft_calloc.c) | `void  *ft_calloc(size_t nmemb, size_t size);` | Allocates `nmemb * size` and initializes it to `0`
 
 ### 🔹2 - Utilitary (Additional) Functions 
 
 - These functions were created to facilitate the execution of complex logical operations:
 
-  Name | Prototype | Description
-  :---:|:---:|:---:
-  [ft_substr](./ft_substr.c) | `char  *ft_substr(char const *s, unsigned int start, size_t len);` | Gets substring from `s` starting at index `start` and has maximum length `len`
-  [ft_strjoin](./ft_strjoin.c) | `char  *ft_strjoin(char const *s1, char const *s2);` | Concatenates `s1` and `s2` into a new string
-  [ft_strtrim](./ft_strtrim.c) | `char  *ft_strtrim(char const *s1, char const *set);` | Removes `set` from beginning and end of `s1`
-  [ft_split](./ft_split.c) | `char  **ft_split(char const *s, char c);` | Gets array of new strings that result from splitting `s` using `c`
-  [ft_itoa](./ft_itoa.c) | `char  *ft_itoa(int n);` | converts `n` to string
-  [ft_strmapi](./ft_strmapi.c) | `char  *ft_strmapi(char const *s, char (*f)(unsigned int, char));` | Gets a new string resulting from the application of `f` in every character of `s`
-  [ft_striteri](./ft_striteri.c) | `void  ft_striteri(char *s, void (*f)(unsigned int, char*));` | Applies `f` to every character in `s`
-  [ft_putchar_fd](./ft_putchar_fd.c) | `void  ft_putchar_fd(char c, int fd);` | Outputs `c` to file descriptor `fd`
-  [ft_putstr_fd](./ft_putstr_fd.c) | `void  ft_putstr_fd(char *s, int fd);` | Outputs `s` to file descriptor `fd`
-  [ft_putendl_fd](./ft_putendl_fd.c) | `void  ft_putendl_fd(char *s, int fd);` | Outputs `s` followed by `\n` to file descriptor `fd`
-  [ft_putnbr_fd](./ft_putnbr_fd.c) | `void  ft_putnbr_fd(int n, int fd);` | Outputs `n` to file descriptor `fd`
+Name | Prototype | Description
+:---:|:---:|:---:
+[ft_substr](./ft_substr.c) | `char  *ft_substr(char const *s, unsigned int start, size_t len);` | Gets substring from `s` starting at index `start` and has maximum length `len`
+[ft_strjoin](./ft_strjoin.c) | `char  *ft_strjoin(char const *s1, char const *s2);` | Concatenates `s1` and `s2` into a new string
+[ft_strtrim](./ft_strtrim.c) | `char  *ft_strtrim(char const *s1, char const *set);` | Removes `set` from beginning and end of `s1`
+[ft_split](./ft_split.c) | `char  **ft_split(char const *s, char c);` | Gets array of new strings that result from splitting `s` using `c`
+[ft_itoa](./ft_itoa.c) | `char  *ft_itoa(int n);` | converts `n` to string
+[ft_strmapi](./ft_strmapi.c) | `char  *ft_strmapi(char const *s, char (*f)(unsigned int, char));` | Gets a new string resulting from the application of `f` in every character of `s`
+[ft_striteri](./ft_striteri.c) | `void  ft_striteri(char *s, void (*f)(unsigned int, char*));` | Applies `f` to every character in `s`
+[ft_putchar_fd](./ft_putchar_fd.c) | `void  ft_putchar_fd(char c, int fd);` | Outputs `c` to file descriptor `fd`
+[ft_putstr_fd](./ft_putstr_fd.c) | `void  ft_putstr_fd(char *s, int fd);` | Outputs `s` to file descriptor `fd`
+[ft_putendl_fd](./ft_putendl_fd.c) | `void  ft_putendl_fd(char *s, int fd);` | Outputs `s` followed by `\n` to file descriptor `fd`
+[ft_putnbr_fd](./ft_putnbr_fd.c) | `void  ft_putnbr_fd(int n, int fd);` | Outputs `n` to file descriptor `fd`
 
 ### 🔹3 - Linked Lists (Nodes)
 
 - These functions were created in order to be able to operate with complex structures made from structs that can store variable content while maintaining the memory heap allocated connected:
 
-  Name | Prototype | Description
-  :---:|:---:|:---:
-  [ft_lstnew](./ft_lstnew.c) | `t_list  *ft_lstnew(void *content);` | Creates new node with content `content` and next `NULL`
-  [ft_lstadd_front](./ft_lstadd_front.c) | `void  ft_lstadd_front(t_list **lst, t_list *new);` | Adds node `new` at the beginning of `lst`
-  [ft_lstsize](./ft_lstsize.c) | `int  ft_lstsize(t_list *lst);` | Counts number of nodes in `lst`
-  [ft_lstlast](./ft_lstlast.c) | `t_list  *ft_lstlast(t_list *lst);` | Gets last node of `lst`
-  [ft_lstadd_back](./ft_lstadd_back.c) | `void  ft_lstadd_back(t_list **lst, t_list *new);` | Adds node `new` at the end of `lst`
-  [ft_lstdelone](./ft_lstdelone.c) | `void  ft_lstdelone(t_list *lst, void (*del)(void*));` | Frees the node `lst` and its content, latter with `del`
-  [ft_lstclear](./ft_lstclear.c) | `void  ft_lstclear(t_list **lst, void (*del)(void*));` | Deletes all the nodes starting at the one pointed to by `lst` and frees their contents
-  [ft_lstiter](./ft_lstiter.c) | `void  ft_lstiter(t_list *lst, void (*f)(void *));` | Applies `f` iteractively to the list `lst`
-  [ft_lstmap](/ft_lstmap.c) | `t_list  *ft_lstmap(t_list *lst, void *(*f)(void *),void (*del)(void *));` | Gets new list resulting of the application of `f` to list `lst` iteractively
+Name | Prototype | Description
+:---:|:---:|:---:
+[ft_lstnew](./ft_lstnew.c) | `t_list  *ft_lstnew(void *content);` | Creates new node with content `content` and next `NULL`
+[ft_lstadd_front](./ft_lstadd_front.c) | `void  ft_lstadd_front(t_list **lst, t_list *new);` | Adds node `new` at the beginning of `lst`
+[ft_lstsize](./ft_lstsize.c) | `int  ft_lstsize(t_list *lst);` | Counts number of nodes in `lst`
+[ft_lstlast](./ft_lstlast.c) | `t_list  *ft_lstlast(t_list *lst);` | Gets last node of `lst`
+[ft_lstadd_back](./ft_lstadd_back.c) | `void  ft_lstadd_back(t_list **lst, t_list *new);` | Adds node `new` at the end of `lst`
+[ft_lstdelone](./ft_lstdelone.c) | `void  ft_lstdelone(t_list *lst, void (*del)(void*));` | Frees the node `lst` and its content, latter with `del`
+[ft_lstclear](./ft_lstclear.c) | `void  ft_lstclear(t_list **lst, void (*del)(void*));` | Deletes all the nodes starting at the one pointed to by `lst` and frees their contents
+[ft_lstiter](./ft_lstiter.c) | `void  ft_lstiter(t_list *lst, void (*f)(void *));` | Applies `f` iteractively to the list `lst`
+[ft_lstmap](/ft_lstmap.c) | `t_list  *ft_lstmap(t_list *lst, void *(*f)(void *),void (*del)(void *));` | Gets new list resulting of the application of `f` to list `lst` iteractively
