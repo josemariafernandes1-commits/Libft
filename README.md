@@ -94,7 +94,7 @@ This project included the writing of functions adapted from the original version
 #### Conversion / Manipulation / Verification
 
 Name | Prototype | Description
-:---:|:---:|:---:
+---|---|---
 [ft_atoi](./ft_atoi.c) | `int  ft_atoi(const char *nptr)` | Converts `nptr` to int
 [ft_isalpha](./ft_isalpha.c) | `int  ft_isalpha(int c);` | Checks if `c` is an alphabetic character
 [ft_isdigit](./ft_isdigit.c) | `int  ft_isdigit(int c);` | Checks if `c` is a digit character
@@ -107,7 +107,7 @@ Name | Prototype | Description
 #### String Duplication / Manipulation / Comparison
 
 Name | Prototype | Description
-:---:|:---:|:---:
+---|---|---
 [ft_strlen](./ft_strlen.c) | `size_t  ft_strlen(const char *s);` | Gets length of `s`
 [ft_strlcpy](./ft_strlcpy.c) | `size_t  ft_strlcpy(char *dst, const char *src, size_t size);` | Copies `size - 1` characters from `src` into `dst`
 [ft_strlcat](./ft_strlcat.c) | `size_t  ft_strlcat(char *dst, const char *src, size_t size);` | Appends `size - strlen(dst) - 1` bytes from `src` to `dst`
@@ -120,7 +120,7 @@ Name | Prototype | Description
 #### Memory Duplication / Allocation / Comparison
 
 Name | Prototype | Description
-:---:|:---:|:---:
+---|---|---
 [ft_memset](./ft_memset.c) | `void  *ft_memset(void *s, int c, size_t n);` | Fills `s` with `n` bytes `c`
 [ft_bzero](./ft_bzero.c) | `void  ft_bzero(void *s, size_t n);` | Fills `s` with `n` bytes `'\0'`
 [ft_memcpy](./ft_memcpy.c) | `void  *ft_memcpy(void *dest, const void *src, size_t n);` | Copies `n` bytes from non-overlapping memory areas `src` to `dest`
@@ -134,7 +134,7 @@ Name | Prototype | Description
 - These functions were created to facilitate the execution of complex logical operations:
 
 Name | Prototype | Description
-:---:|:---:|:---:
+---|---|---
 [ft_substr](./ft_substr.c) | `char  *ft_substr(char const *s, unsigned int start, size_t len);` | Gets substring from `s` starting at index `start` and has maximum length `len`
 [ft_strjoin](./ft_strjoin.c) | `char  *ft_strjoin(char const *s1, char const *s2);` | Concatenates `s1` and `s2` into a new string
 [ft_strtrim](./ft_strtrim.c) | `char  *ft_strtrim(char const *s1, char const *set);` | Removes `set` from beginning and end of `s1`
@@ -152,7 +152,7 @@ Name | Prototype | Description
 - These functions were created in order to be able to operate with complex structures made from structs that can store variable content while maintaining the memory heap allocated connected:
 
 Name | Prototype | Description
-:---:|:---:|:---:
+---|---|---
 [ft_lstnew](./ft_lstnew.c) | `t_list  *ft_lstnew(void *content);` | Creates new node with content `content` and next `NULL`
 [ft_lstadd_front](./ft_lstadd_front.c) | `void  ft_lstadd_front(t_list **lst, t_list *new);` | Adds node `new` at the beginning of `lst`
 [ft_lstsize](./ft_lstsize.c) | `int  ft_lstsize(t_list *lst);` | Counts number of nodes in `lst`
