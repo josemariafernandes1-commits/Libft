@@ -1,5 +1,7 @@
 *This project has been created as part of the 42 curriculum by jduque-n.*
 
+![Static Badge](https://img.shields.io/badge/FInal%20Grade-100%25-brightgreen)?style=plastic)
+
 # Description
 
 The Libft project consists on structuring a library with basic C library functions built from the start to be used for other projects. This library contains functions associated with string, memory, data and file manipulation, and an added list of functions used to operate with nodes and linked lists.
