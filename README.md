@@ -1,6 +1,6 @@
 *This project has been created as part of the 42 curriculum by jduque-n.*
 
-![Static Badge](https://img.shields.io/badge/FInal%20Grade-100%25-brightgreen)?style=plastic)
+![Static Badge](https://img.shields.io/badge/FInal%20Grade-100%25-brightgreen)
 
 # Description
 
